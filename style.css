@@ -1,0 +1,382 @@
+/* Reset CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url('Biru\ Illustrasi\ Kreatif\ Hari\ Guru\ Sedunia\ Instagram\ Post.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position: 50% 100%; /* Center the image */
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container Utama */
+
+/* Judul */
+h1 {
+    color: white; /* Warna teks putih */
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; /* Berat font Black */
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5); /* Efek shadow hitam */
+    transition: text-shadow 0.3s ease, transform 0.3s ease; /* Transisi smooth */
+}
+
+/* Efek saat hover (opsional) */
+h1:hover {
+    text-shadow: 4px 8px 16px rgba(0, 0, 0, 0.7); /* Shadow lebih kuat saat hover */
+    transform: scale(1.02); /* Sedikit memperbesar teks saat di-hover */
+}
+
+/* Label untuk Pilih Jabatan */
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* Menggunakan Montserrat Light */
+    font-size: 16px;
+    color: #ffffff; /* Warna teks tetap */
+}
+
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Tombol */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+/* Dropdown dan Input */
+select, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus, input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Tombol */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Animasi FadeIn untuk loading */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Animasi Gambar Preview */
+#previewContainer {
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Efek fade-in untuk gambar pratinjau */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/* Keyframes untuk animasi fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Muncul dari bawah sedikit */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+/* Container untuk spinner */
+.loading-spinner {
+    border: 6px solid #f3f3f3;  /* Warna abu-abu */
+    border-top: 6px solid #80d0ff;  /* Warna hijau */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;  /* Animasi berputar */
+    margin: 20px auto;
+}
+
+/* Keyframes untuk animasi spinner */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/* Tombol dengan gradasi biru muda dan glow */
+button {
+    background: linear-gradient(135deg, #0077b6, #0077b6); /* Gradasi dari biru muda ke biru lebih gelap */
+    color: white; /* Warna teks */
+    border: none; /* Tanpa border */
+    padding: 12px 20px; /* Padding */
+    width: 100%; /* Lebar penuh */
+    border-radius: 8px; /* Sudut membulat */
+    font-size: 18px; /* Ukuran font */
+    cursor: pointer; /* Pointer saat hover */
+    transition: background 0.3s, transform 0.2s ease-in-out; /* Transisi untuk background dan transform */
+}
+
+/* Hapus efek glow saat hover */
+button:hover {
+    background: linear-gradient(135deg, #80d0ff, #80d0ff); /* Ganti gradasi saat hover */
+    transform: translateY(-2px); /* Sedikit mengangkat tombol saat hover */
+    /* Hapus box-shadow untuk menghilangkan efek glow */
+}
+
+/* Tombol disabled (terkunci) */
+button:disabled {
+    background: #b0d0f1; /* Warna gradasi yang lebih pucat saat tombol disabled */
+    cursor: not-allowed; /* Cursor tidak diperbolehkan */
+    box-shadow: none; /* Menghapus efek glow saat tombol tidak aktif */
+}/* Tambahkan style untuk logo */
+
+.logo {
+    max-width: 450px; /* Menyesuaikan ukuran logo */
+    width: 100%; /* Responsif terhadap ukuran layar */
+    height: auto; /* Menjaga rasio aspek logo */
+}
+
+/* Container Utama */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.3); /* Latar belakang transparan dengan sedikit warna putih */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efek blur */
+    margin-bottom: 50px; /* Jarak bawah untuk mencegah kontainer mentok ke bawah */
+}
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    body, html {
+        font-size: 14px; /* Ukuran font dasar untuk tampilan mobile */
+        background: url('Biru\ Illustrasi\ Kreatif\ Hari\ Guru\ Sedunia\ Instagram\ Post\ \(2\).png') no-repeat center center fixed; /* Gambar latar belakang khusus untuk mobile */
+        background-size: cover; /* Memastikan gambar menutupi seluruh area */
+        background-position: center;
+    }
+
+    .container {
+        margin: 10px; /* Margin lebih kecil untuk perangkat mobile */
+        padding: 8px; /* Padding yang sesuai untuk perangkat mobile */
+        border-radius: 10px; /* Sudut membulat lebih kecil */
+        box-shadow: none; /* Menghilangkan bayangan jika diperlukan */
+        width: 88%; /* Pastikan lebar kontainer 100% dari layar */
+    }
+
+    h1 {
+        font-size: 28px; /* Mengurangi ukuran font judul untuk tampilan mobile */
+    }
+
+    label {
+        font-size: 14px; /* Mengurangi ukuran font label */
+    }
+
+    select, input[type="text"], button {
+        font-size: 16px; /* Ukuran font yang konsisten untuk input dan tombol */
+        padding: 10px; /* Padding yang lebih kecil untuk tombol dan input */
+    }
+
+    button {
+        width: 100%; /* Pastikan tombol lebar penuh */
+    }
+
+    .logo {
+        max-width: 80%; /* Pastikan logo responsif dan tidak melampaui lebar layar */
+        margin-bottom: 20px;
+        height: auto; /* Menjaga rasio aspek logo */
+    }
+
+    .footer {
+        font-size: 14px; /* Ukuran font footer lebih kecil */
+        margin-top: 40px ;
+        padding: 5px; /* Padding footer lebih kecil */
+    }
+
+    /* Dropdown */
+    .custom-dropdown {
+        width: 100%; /* Pastikan dropdown lebar penuh */
+    }
+
+    /* Menyesuaikan tampilan gambar */
+    #previewContainer {
+        margin-top: 20px;
+        margin-bottom: 25px; /* Add margin at the bottom */
+    }
+}
+/* Animasi Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Jika ingin menambahkan animasi pada .container */
+.container {
+    opacity: 0; /* Mulai dari transparan */
+    animation: fadeIn 2s ease-in-out forwards; /* Menambahkan animasi ke container */
+}
+.logo-container {
+    animation: logoIn 1s ease-out forwards;
+}
+
+.container {
+    opacity: 0;
+    transform: translateY(50px); /* Mulai sedikit di bawah */
+    animation: fadeIn 1.5s ease-out 0.5s forwards; /* Menambahkan delay 0.5 detik */
+}
+/* Gaya untuk konten halaman */
+.content {
+    height: 2000px; /* Menambahkan tinggi untuk menggulirkan halaman */
+    padding: 30px;
+}
+
+/* Gaya untuk scroll handle di kanan */
+.scroll-handle {
+    position: fixed;
+    right: 10px;  /* Posisi di kanan halaman */
+    top: 50%;     /* Posisi vertikal tengah */
+    width: 10px;  /* Ukuran handle minimalis */
+    height: 50px; /* Ukuran handle minimalis */
+    background-color: #007BFF; /* Warna biru muda */
+    cursor: pointer;
+    border-radius: 5px;  /* Bentuk yang lebih halus */
+    z-index: 9999;
+    display: block;
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.scroll-handle:hover {
+    background-color: #0056b3; /* Warna lebih gelap saat hover */
+}
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+}
+
+.dropdown-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+#previewContainer {
+    margin-top: 20px;
+    margin-bottom: 25px; /* Add margin at the bottom */
+}
+.logo-container {
+    text-align: center; /* Center-aligns the logo */
+    margin-bottom: -60px;
+    margin-top: 50px; /* Adds some space above the logo */
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0); /* Latar belakang gelap dengan transparansi */
+    color: #ffffff; /* Warna teks putih */
+    text-align: center; /* Rata tengah */
+    padding: 10px 0; /* Padding atas dan bawah */
+    position: relative; /* Memungkinkan footer berada di bawah konten */
+    bottom: 0; /* Menempatkan footer di bagian bawah */
+    width: 100%; /* Lebar penuh */
+}
+
+.footer-content {
+    max-width: 600px; /* Lebar maksimal untuk konten footer */
+    margin: 0 auto; /* Pusatkan konten */
+}
+body {
+    font-family: 'Poppins', sans-serif; /* Font default untuk halaman */
+}
