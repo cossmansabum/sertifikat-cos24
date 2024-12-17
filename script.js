@@ -28,8 +28,8 @@ document.getElementById('generateBtn').addEventListener('click', function() {
 
     setTimeout(() => {
         const canvas = document.createElement('canvas');
-        canvas.width = 2480;
-        canvas.height = 3508;
+        canvas.width = 2000;
+        canvas.height = 1414;
         const ctx = canvas.getContext('2d');
 
         const img = new Image();
